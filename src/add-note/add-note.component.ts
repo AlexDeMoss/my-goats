@@ -9,4 +9,11 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
     styleUrl: './add-note.component.css',
     imports: [ReactiveFormsModule],
 })
-export class AddNoteComponent {}
+export class AddNoteComponent {
+    addNoteForm = new FormGroup({
+        title: new FormControl(''),
+        text: new FormControl(''),
+    })
+
+
+}
