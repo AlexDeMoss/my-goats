@@ -11,9 +11,9 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class AddNoteComponent {
     addNoteForm = new FormGroup({
-        title: new FormControl(''),
+        title: new FormControl('', Validators.required),
         text: new FormControl(''),
-    })
+    });
 
 
 }
